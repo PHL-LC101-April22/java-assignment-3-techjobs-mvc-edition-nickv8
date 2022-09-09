@@ -44,3 +44,7 @@ label {
 .centered {
     text-align: center;
 }
+
+.table-data {
+    color: blue;
+}
