@@ -49,19 +49,19 @@
         </tr>
         <tr>
             <td class="table-data">Employer</td>
-            <td th:text="${job.getEmployer}">Employer</td>
+            <td> <a th:href="@{results(searchType=employer, searchTerm=${job.employer})}" th:text="${job.getEmployer}"></a></td>
         </tr>
         <tr>
             <td class="table-data">Location</td>
-             <td th:text = "${job.getLocation}"></td>
+            <td> <a th:href="@{results(searchType=location, searchTerm=${job.location})}" th:text = "${job.getLocation}"></a></td>
         </tr>
         <tr>
             <td class="table-data">Position</td>
-            <td th:text="${job.getPositionType}"></td>
+            <td> <a th:href="@{results(searchType=positionType, searchTerm=${job.positionType})}"  th:text="${job.getPositionType}"></a></td>
         </tr>
         <tr>
         <td class="table-data">Skill</td>
-        <td th:text="${job.getCoreCompetency}"></td>
+        <td> <a th:href="@{results(searchType=coreCompetency, searchTerm=${job.coreCompetency})}" th:text="${job.getCoreCompetency}"></a></td>
         </tr>
 
     </table>
